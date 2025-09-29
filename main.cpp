@@ -9,8 +9,9 @@ int main() {
     //Defining camera
     camera3D camera = {0};
     camera.positon = (vector3){0.0f,5.0f,5.0f}
-    camera.target = (vector3){0.0f,5.0f,5.0f}
-    camera.up = (vector3){0.0f,5.0f,5.0f}
+    camera.target = (vector3){0.0f,0.0f,0.0f}
+    camera.up = (vector3){0.0f,1.0f,0.0f}
+    camera
 
     SetTargetFPS(60);
 
