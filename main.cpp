@@ -14,6 +14,18 @@ int main() {
     while (!WindowShouldClose()) {
         BeginDrawing();
         ClearBackground(RAYWHITE);
+        
+        BeginMode3D(camera);
+
+            DrawCube(cubePosition, 2.0f, 2.0f, 2.0f, GREEN);
+            DrawCubeWires(cubePosition, 2.0f, 2.0f, 2.0f, PURPLE);
+
+            DrawGRID(10, 1.0F);
+
+        EndMode3D();
+
+        DrawText("WELCOME TO MITCH N' KICKS' 3D PLAY SPACE", 10, 40, 20, BLACK)
+
         EndDrawing();
     }
 
