@@ -7,12 +7,12 @@ int main() {
     InitWindow(screenWidth, screenHeight, "Raylib 3d cube");
      
     //Defining camera
-    camera3D camera = {0};
-    camera.positon = (vector3){0.0f,5.0f,5.0f}
-    camera.target = (vector3){0.0f,0.0f,0.0f}
-    camera.up = (vector3){0.0f,1.0f,0.0f}
-    camera.fovy = 45.0f:
-    camera.projection = CAMERA_PERSPECTIVE:
+    Camera3D camera = {0};
+    Camera.Positon = (Vector3){0.0f,5.0f,5.0f};
+    Camera.target = (Vector3){0.0f,0.0f,0.0f};
+    Camera.up = (Vector3){0.0f,1.0f,0.0f};
+    Camera.fovy = 45.0f:
+    Camera.projection = CAMERA_PERSPECTIVE:
 
     SetTargetFPS(60);
 
@@ -22,14 +22,14 @@ int main() {
         
         BeginMode3D(camera);
 
-            DrawCube(cubePosition, 2.0f, 2.0f, 2.0f, GREEN);
-            DrawCubeWires(cubePosition, 2.0f, 2.0f, 2.0f, PURPLE);
+            DrawCube(CubePosition, 2.0f, 2.0f, 2.0f, GREEN);
+            DrawCubeWires(CubePosition, 2.0f, 2.0f, 2.0f, PURPLE);
 
-            DrawGRID(10, 1.0F);
+            DrawGrid(10, 1.0F);
 
         EndMode3D();
 
-        DrawText("WELCOME TO MITCH N' KIXS' 3D PLAY SPACE", 10, 40, 20, BLACK)
+        DrawText("WELCOME TO MITCH N' KIXS' 3D PLAY SPACE", 10, 40, 20, BLACK);
 
         EndDrawing();
     }
