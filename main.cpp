@@ -8,7 +8,7 @@ int main() {
      
     //Defining camera
     Camera3D camera = {0};
-    Camera.Positon = (Vector3){0.0f,5.0f,5.0f};
+    Camera.Position = (Vector3){0.0f,5.0f,5.0f};
     Camera.target = (Vector3){0.0f,0.0f,0.0f};
     Camera.up = (Vector3){0.0f,1.0f,0.0f};
     Camera.fovy = 45.0f;
@@ -20,7 +20,7 @@ int main() {
         BeginDrawing();
         ClearBackground(RAYWHITE);
         
-        BeginMode3D(camera);
+        BeginMode3D(Camera);
 
             DrawCube(CubePosition, 2.0f, 2.0f, 2.0f, GREEN);
             DrawCubeWires(CubePosition, 2.0f, 2.0f, 2.0f, PURPLE);
