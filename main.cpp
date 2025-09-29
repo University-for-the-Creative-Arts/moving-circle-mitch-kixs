@@ -11,8 +11,8 @@ int main() {
     Camera.Positon = (Vector3){0.0f,5.0f,5.0f};
     Camera.target = (Vector3){0.0f,0.0f,0.0f};
     Camera.up = (Vector3){0.0f,1.0f,0.0f};
-    Camera.fovy = 45.0f:
-    Camera.projection = CAMERA_PERSPECTIVE:
+    Camera.fovy = 45.0f;
+    Camera.projection = CAMERA_PERSPECTIVE;
 
     SetTargetFPS(60);
 
