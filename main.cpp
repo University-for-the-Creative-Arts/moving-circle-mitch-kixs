@@ -7,8 +7,12 @@ int main() {
     InitWindow(screenWidth, screenHeight, "Raylib 3d cube");
      
     //Defining camera
-    camera3D camera
-    
+    camera3D camera = {0};
+    camera.positon = (vector3){0.0f,5.0f,5.0f}
+    camera.target = (vector3){0.0f,0.0f,0.0f}
+    camera.up = (vector3){0.0f,1.0f,0.0f}
+    camera
+
     SetTargetFPS(60);
 
     while (!WindowShouldClose()) {
