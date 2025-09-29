@@ -14,19 +14,21 @@ int main() {
     camera.fovy = 45.0f;
     camera.projection = CAMERA_PERSPECTIVE;
 
-    vector3 cubePosition = {0.0f, 0.0f, 0.0f}
+    vector3 cubePosition = {0.0f, 0.0f, 0.0f};
+    Vector3 CubeRotation = {0.0f, 0.0f, 0.0f};
 
     SetTargetFPS(60);
 
     while (!WindowShouldClose()) {
         
-        if(IsKeyDown(KEY_RIGHT)) cubePosition.x += 0.5f
-        if(IsKeyDown(KEY_LEFT)) cubePosition.x -= 0.5f
-        if(IsKeyDown(KEY_UP)) cubePosition.Z += 0.5f
-        if(IsKeyDown(KEY_DOWN)) cubePosition.Z -= 0.5f
-        if(IsKeyDown(KEY_SPACE)) cubePosition.Y += 0.5f
-        if(IsKeyDown(KEY_SHIFT)) cubePosition.Y -= 0.5f
+        if(IsKeyDown(KEY_RIGHT)) cubePosition.x += 0.5f;
+        if(IsKeyDown(KEY_LEFT)) cubePosition.x -= 0.5f;
+        if(IsKeyDown(KEY_UP)) cubePosition.Z += 0.5f;
+        if(IsKeyDown(KEY_DOWN)) cubePosition.Z -= 0.5f;
+        if(IsKeyDown(KEY_SPACE)) cubePosition.Y += 0.5f;
+        if(IsKeyDown(KEY_SIX)) cubePosition.Y -= 0.5f;
 
+        if(IsKeyDown(KEY_R)) CubeRotation += 1.0f
 
         BeginDrawing();
         ClearBackground(RAYWHITE);
