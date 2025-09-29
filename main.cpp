@@ -8,11 +8,11 @@ int main() {
      
     //Defining camera
     Camera3D camera = {0};
-    Camera.Position = (Vector3){0.0f,5.0f,5.0f};
-    Camera.target = (Vector3){0.0f,0.0f,0.0f};
-    Camera.up = (Vector3){0.0f,1.0f,0.0f};
-    Camera.fovy = 45.0f;
-    Camera.projection = CAMERA_PERSPECTIVE;
+    camera.Position = (Vector3){0.0f,5.0f,5.0f};
+    camera.target = (Vector3){0.0f,0.0f,0.0f};
+    camera.up = (Vector3){0.0f,1.0f,0.0f};
+    camera.fovy = 45.0f;
+    camera.projection = CAMERA_PERSPECTIVE;
 
     SetTargetFPS(60);
 
@@ -20,7 +20,7 @@ int main() {
         BeginDrawing();
         ClearBackground(RAYWHITE);
         
-        BeginMode3D(Camera);
+        BeginMode3D(camera);
 
             DrawCube(CubePosition, 2.0f, 2.0f, 2.0f, GREEN);
             DrawCubeWires(CubePosition, 2.0f, 2.0f, 2.0f, PURPLE);
