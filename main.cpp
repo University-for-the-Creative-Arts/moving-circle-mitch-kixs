@@ -20,6 +20,14 @@ int main() {
 
     while (!WindowShouldClose()) {
         
+        if(IsKeyDown(KEY_RIGHT)) cubePosition.x += 0.5f
+        if(IsKeyDown(KEY_LEFT)) cubePosition.x -= 0.5f
+        if(IsKeyDown(KEY_UP)) cubePosition.Z += 0.5f
+        if(IsKeyDown(KEY_DOWN)) cubePosition.Z -= 0.5f
+        if(IsKeyDown(KEY_SPACE)) cubePosition.Y += 0.5f
+        if(IsKeyDown(KEY_SHIFT)) cubePosition.Y -= 0.5f
+
+
         BeginDrawing();
         ClearBackground(RAYWHITE);
         
