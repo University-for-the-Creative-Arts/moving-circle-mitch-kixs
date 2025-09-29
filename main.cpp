@@ -29,11 +29,10 @@ int main() {
 
         EndMode3D();
 
-        DrawText("WELCOME TO MITCH N' KICKS' 3D PLAY SPACE", 10, 40, 20, BLACK)
+        DrawText("WELCOME TO MITCH N' KIXS' 3D PLAY SPACE", 10, 40, 20, BLACK)
 
         EndDrawing();
     }
 
     CloseWindow();
-    return 0;
 } 
