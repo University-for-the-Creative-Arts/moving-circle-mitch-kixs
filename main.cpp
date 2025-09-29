@@ -11,7 +11,8 @@ int main() {
     camera.positon = (vector3){0.0f,5.0f,5.0f}
     camera.target = (vector3){0.0f,0.0f,0.0f}
     camera.up = (vector3){0.0f,1.0f,0.0f}
-    camera
+    camera.fovy = 45.0f:
+    camera.projection = CAMERA_PERSPECTIVE:
 
     SetTargetFPS(60);
 
